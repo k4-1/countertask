@@ -1,0 +1,53 @@
+name: socket-challenge
+version: 0.1.0
+summary: Socket Challenge
+description: Socket Challenge that count everything!
+
+confinement: strict
+base: core18
+grade: stable
+
+apps:
+  daemon:
+    daemon: simple
+    restart-condition: always
+    command-chain:
+      - bin/run-daemon
+      - bin/wayland-launch
+    command: bin/countertask
+    extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
+
+  socket-challenge:
+    command-chain:
+      - bin/wayland-launch
+    command: countertask
+    extensions: [flutter-master] # Where "master" defines which Flutter channel to use for the build
+
+parts:
+  socket-challenge:
+    source: .
+    plugin: flutter
+    flutter-target: lib/main.dart # The main entry-point file of the application
+
+  mir-kiosk-snap-launch:
+    plugin: dump
+    source: https://github.com/MirServer/mir-kiosk-snap-launch.git
+    override-build: $SNAPCRAFT_PART_BUILD/build-with-plugs.sh opengl pulseaudio wayland
+    stage-packages:
+      - inotify-tools
+
+  assets:
+    plugin: nil
+    stage-packages:
+      - dmz-cursor-theme
+      - fonts-dejavu
+      - fonts-freefont-ttf
+      - fonts-ubuntu
+
+layout:
+  /usr/share/fonts:
+    bind: $SNAP/usr/share/fonts
+  /etc/fonts:
+    bind: $SNAP/etc/fonts
+  /usr/share/icons:
+    bind: $SNAP/usr/share/icons

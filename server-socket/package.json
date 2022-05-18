@@ -1,0 +1,14 @@
+{
+  "name": "socket-io-challenge",
+  "version": "1.0.0",
+  "author": "Mik <info@slnt-opp.xyz>",
+  "license": "MIT",
+  "dependencies": {
+    "socket.io": "^2.4.1",
+    "socket.io-client": "^4.4.1"
+  },
+  "scripts": {
+    "server": "node server",
+    "client": "node client"
+  }
+}
