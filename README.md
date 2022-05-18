@@ -1,16 +1,24 @@
-# countertask
+# Socket IO Challenge Apps Accepted
 
-A new Flutter project.
+This apps available in linux specifically for Ubuntu 20.04 and Ubuntu Core. The apps also available with Android. The Apps is about to connect with the server made with socket io. Server will generate the counting, then client will acknowledge and receive. Then, will display upon the Apps. There's also a logic behind the colour changeable.
 
-## Getting Started
+## APK and Snap
 
-This project is a starting point for a Flutter application.
+Under ubuntu-android-apps folder > app-release.apk and socket-challenge_0.1.0_amd64.snap
 
-A few resources to get you started if this is your first Flutter project:
+## Run Server
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository
+2. Then, run code below in terminal:
+```
+yarn
+```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3. run the server:
+```
+yarn server
+```
+
+## Run Apps
+
+1. Open either APK or SNAP
