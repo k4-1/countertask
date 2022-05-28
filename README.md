@@ -6,9 +6,9 @@ This apps available in linux specifically for Ubuntu 20.04 and Ubuntu Core. The 
 
 Under ubuntu-android-apps folder
 
-- app-release.apk
-- socket-challenge_0.1.0_amd64.snap
-- socket-challenge-top_0.1.0_amd64.snap
+- app-release.apk [Android]
+- socket-challenge_0.1.0_amd64.snap [Ubuntu Core]
+- socket-challenge-top_0.1.0_amd64.snap [Ubuntu 20.04]
 
 ## Run Server
 
@@ -25,4 +25,3 @@ yarn server
 
 ## Run Apps
 
-1. Open either APK or SNAP
