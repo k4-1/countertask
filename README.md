@@ -23,5 +23,53 @@ yarn
 yarn server
 ```
 
-## Run Apps
+## Run Apps in Ubuntu 20.04
+
+This apps was successfully been tested with Ubuntu 20.04. How to access:
+
+1. Clone the repository in any folder inside your Ubuntu environment
+2. Open terminal and enter the folder where the file of the apps located which the file is socket-challenge-top_0.1.0_amd64.snap
+3. run follwing command:
+```
+sudo snap install socket-challenge-top_0.1.0_amd64.snap --dangerous
+```
+
+4. After done the installation insert the following command:
+```
+socket-challenge-top
+```
+
+5. Congratulation, you successful open the apps
+
+## Run Apps in Ubuntu Core
+
+This apps was successfully been tested with Ubuntu Core 18. How to access:
+
+1. SSH or open your Ubuntu Core environment
+2. Transfer the repositotry into the Ubuntu Core via SCP
+3. Install ubuntu frame as the following command:
+```
+snap install ubuntu-frame
+```
+
+4. Open terminal and enter the folder where the file of the apps located which the file is socket-challenge_0.1.0_amd64.snap
+5. run follwing command:
+```
+sudo snap install socket-challenge_0.1.0_amd64.snap --dangerous
+```
+
+6. After done the installation insert the following command:
+```
+socket-challenge
+```
+OR
+
+7. After done installing ubuntu frame, you can directly download the apps using snap as the following command:
+```
+snap install socket-challenge
+```
+
+8. Congratulation, you successful open the apps under your Ubuntu Core
+
+
 
