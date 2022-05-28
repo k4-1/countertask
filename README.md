@@ -4,7 +4,11 @@ This apps available in linux specifically for Ubuntu 20.04 and Ubuntu Core. The 
 
 ## APK and Snap
 
-Under ubuntu-android-apps folder > app-release.apk and socket-challenge_0.1.0_amd64.snap
+Under ubuntu-android-apps folder
+
+- app-release.apk
+- socket-challenge_0.1.0_amd64.snap
+- socket-challenge-top_0.1.0_amd64.snap
 
 ## Run Server
 
